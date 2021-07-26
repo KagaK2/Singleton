@@ -1,0 +1,10 @@
+.filled {
+  color: 'white';
+  background-color: #6AC85A;
+  & .primary {
+    background-color: #6AC85A;
+  }
+  & .secondary{
+    background-color: #793BFF;
+  }
+}

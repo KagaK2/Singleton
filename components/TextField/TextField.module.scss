@@ -1,0 +1,14 @@
+.textField {
+  background: #F8F8F8;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  color: #A0A0A0;
+  &:focus, &:focus-visible {
+    color: #111111;
+  }
+}

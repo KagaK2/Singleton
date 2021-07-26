@@ -1,0 +1,22 @@
+.iconButton {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+
+  &:hover {
+    background: #9362FF;
+    color: white;
+  }
+
+  &:active {
+    background: #602FCC;
+    color: white;
+  }
+
+  &:disabled {
+    background: #D6C4FF;
+    color: white;
+  }
+}
