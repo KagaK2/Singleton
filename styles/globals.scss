@@ -1,0 +1,64 @@
+@import 'typography';
+
+$breakpoint-mobile: 375px;
+$breakpoint-tablet--portrait: 768px;
+$breakpoint-tablet--landscape: 1024px;
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  @include heading-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include heading-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include heading-tablet
+  }
+
+}
+
+h2 {
+  @include subheading-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include subheading-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include subheading-tablet
+  }
+}
+
+h3 {
+  @include title-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include title-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include title-tablet
+  }
+}
+
+h6, button {
+  @include caption
+}
+
+p {
+  @include body-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include body-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include body-tablet
+  }
+}

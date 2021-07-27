@@ -1,8 +1,15 @@
-import React from "react";
+import { HTMLAttributes } from 'react';
 
-export type ButtonProps = {
-  children: React.ReactNode,
-  type: "filled" | "outline" | "ghost",
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement>
+{
+  type: keyof typeof ButtonType
   color: string,
-  hasIcon?: boolean,
+  children: React.ReactNode
+  icon?: React.ReactNode
+}
+
+enum ButtonType {
+  filled,
+  outline,
+  ghost
 }

@@ -56,9 +56,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <Button type="filled" color="primary" hasIcon={false} >Edamame</Button>
+        <Button type="ghost" color="primary">Edamame</Button>
         <IconButton/>
-        <TextField placeholder="write this email down"/>
+        <TextField placeholder="write this email down" />
       </footer>
     </div>
   )

@@ -1,5 +1,7 @@
+@import '../../styles/colors.scss';
+
 .textField {
-  background: #F8F8F8;
+  background: $color-neutral-two;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -7,8 +9,9 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 8px 16px;
-  color: #A0A0A0;
+  color: $color-neutral-three;
+  
   &:focus, &:focus-visible {
-    color: #111111;
+    color: $color-neutral-four;
   }
 }
